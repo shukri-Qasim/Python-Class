@@ -1,0 +1,120 @@
+Debugging is finding errors or bugs in your source code and then fixing them .
+A bug is written code which is not giving us the desired output . 
+OR is a glitch that prevents code for giving us the desired ouptut .
+
+IMPORTANCE OF DEBUGGING 
+1: it helps us to quickly solve problems in our code 
+2:to have a desired output of our code
+3: increases our productivity 
+4: to enhance code quality  
+
+EXAMPLES OF BUG/ERRORS
+1:syntax errors
+2:logical errors
+3:value errors
+4:type error
+5:Function error
+6:name error
+
+CLASSIFICATIONS OF BUGS 
+#1: SYNTAX ERROR(coding bug) while writing for example this normally happens when you misuse functions , variables and parameters and normally identified by the IDE.(creating variables with no value).
+#2:LOGICAL ERROR(how you solve a problem): these are errors that occur when the steps taken to solve a problem are not correct .
+    for example : an infinite loop 
+    here the program works without errors but does not produce the expected result .
+#3 DESIGN BUGS : these are bugs that come about  through  misunderstanding something in the design stage Causing the program
+to do what it is supposed to do but not the right thing to do .
+#4.RUN TIME BUGS/ERRORS : this are bugs that occur when the computer tries to performe a task that can not be perfomed
+And they are discovered after running a code or program.
+       Eg: Zero-division error   
+
+
+DUBUGGING CIRCLE 
+step1: writing code. 
+step2: check wether the code is working.
+step3:if it is not working then we debugg.
+step4:if it is working then you go back to coding 
+
+
+THE BUG SEEKING CYCLE 
+step1:writing the code.
+step2:trying to break the code (testing).
+step3:if you succeed in breaking it then you need to debugg.
+step4:if you fail to break then you continue coding .
+
+
+TIPS OF DEBUGGING/PRINCIPLES OF DEBUGGING
+1:cut the bug as early as possible:this is early because details are still in your mind and you know where to look 
+2:only have one bug at a time .
+3:always look where you think you have been working for free if you are trying to look for a bug.
+4:work in small parts  , avoid large chunks of code.
+5:if you are using github always use more comments.
+
+STEPS OF DEBUGGING 
+step1:plan your attack.
+step2:Backup your files using Github to keep track of your script.
+step3:Isolate the block of code or modules with any issue by commenting it out.
+step4: find the actual line with an error.
+step5: fix the error, don't patch it .
+step6:test the fix you have just done.
+step7:look for similar bug.
+
+OTHER STEPS AND STRATEGIES
+step1:Reproducibility: we need to understand the bug before you try fixing it(causes and effects).
+step2:Reduction : finding the smallest test that exposes(shows) the bug.
+reduce the search spaces because bugs are not random,they come from somewhere in the code .
+step3:Deduction :find out what the program is doing (the ccomponents of the program).
+step4:pair programming: someone else will be abke to seew which mistake you have mamde or wrong assupmtion.
+it helps you understand what is you trying in this code as you are explaining yo someone elsee.
+step5:Leveraging experience  from others:seeking solutions from more experieced programmers  
+
+PREVENTIVE MEASSURES FROM BUGS.
+1.Clean and easy code to read for example identing well and not repeating yourself.
+2.Commenting: it helps you to figure out what your code suppose to be doing.
+3.Making One change at a time.#checking your code line by line and make change if is needed.
+4. Testing your code : 
+    A->Unit-test:testing functional blocks of your code .
+    B->Integrational test: interaction between the functional blocks of your code for example the UI and the database.
+    C->Test with Valid and Invalid data: what happens to your code when it runs with both valid and invalid data.
+5.Defensive programming: Adding error checking code and throwing exceptions .
+6.Incubating(resting)#the writer takes time to refresh his/her self.
+
+DEBUGGING TOOLS.
+->Real time code analysis:this refers to the process of analysing code as it is being written or executed, providing the developer with immediate feedback.
+    this analysis is often performed by specialist tools or plugins integrated into the IDEs or code editors 
+
+Real time code analysis tools can perform variuos checks and validtaions including:
+1->Syntax checking : detecting syntax errors, missing or misplaced paranthesis,brackets , semicolon and any other syntatic issues .
+2->Static code analysis: analysing  your code structure , identifying potential bug and suggesting improvement based on redefine tools for example 
+detecting  unused variables , code dublication and potential performance issues.
+3->Code formatting : enforcing consistent code formatting guidelines , such as identation , line spacing  or naming conventions.
+4-> Code Linting(red lines) : analysing code for potential stylistic issues or deviations from best practices, based on predefined rules or community standards.
+    this can include enforcing consistent code style or checking all identified anti-patterns.
+5-> Code completion: providing intelligent suggestions or  auto-completion of code elements such as variable , functions or method name based on the context and available libraries or frameworks.
+6-> Type checking : verifying the correctness of variable type and detecting type related errors or inconsistencies especially in  statically typed language.
+7-> Security analysis: scanning the code for all potential security vulnerabilities such as SQL injection , cross site scripting or insecure data handling practices.
+
+these tools typically analyse the codes in a background  while you are coding , providing feedback through visual indicators, highlighting or inline suggestions.
+they can help catch errors , improve code quality , enforce coding standards , and enhance developer productivity by reducing debugging time .
+Popular examples of real time code analysis tools include ESlint , TSlint for javascript and typescript , pylint for python , Rubocop for ruby , and Nonarlint which is supports multiple programming langauges.
+Integrated development environment (IDE) like visual studio code , pycharm often come with built in or plugin based real time code analysis features.
+
+
+Several tools and techniques available to aid in debugging . here are some common used for debugging : 
+A->Debuggers : are stand alone tools or features built into IDE that allow you to execute code step by step , inspect variables ,set break points and analyse the program execution flow.
+popular debuggers include GDB for C or C++ programs and PDB for python programs . 
+B->Logging: is the practice of recording specific information during program execution to aid in debugging .
+    Logging frameworks include: Log4j(java),Log4net(.NET), or python logging module that allows you to insert log statements at critical points in your code and output relevent information such as variable values or error messages .
+C->Integrated development environment (IDE): IDEs such as Visual Studio code or pycharm provide comprehensive debugging features. they offer tools like break points, variable inspection , step by step execution and real time code analysis.
+#how we use break points in python to debugg.
+D-> Profilers : help I dentify performance bottle necks and optimize code . they provide insights into the programs runtime behavior including memory usage , CPU usage and function call timing 
+    popular profilers include visualVM, Xdebugg or Cprofiles  for python 
+E-> Console output: Simple print statement can be effective for debugging. you can insert print statement at variuos points in your code .
+F->Browser developer tools : when debugging web applications browser developer tools like Chrome devtools or fire fox developer tools coming handy. 
+    they provide a range of features for inspecting and debugging HTML, CSS and JAVASCRIPT code including break points, console logging , network monitoring and DOM inspections .
+G->Unit testing framework: unit testing framework such as Junit(Java),Nunit(..NET) or PYtest for python are not strictly debugging tools but they can help detect and isolate buggs by allowing you to write text that validate the behavor of indivdual component of your code based.
+
+
+
+
+ 
+ 
